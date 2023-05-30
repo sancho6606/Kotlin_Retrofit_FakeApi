@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import com.sancho.kotlin_retrofit_fakeapi.model.ProductModelItem
+import com.sancho.kotlin_retrofit_fakeapi.model.response.ProductModelItem
 import com.sancho.kotlin_retrofit_fakeapi.retrofit.RetrofitInstance.api
 import retrofit2.Call
 import retrofit2.Callback
@@ -30,18 +30,16 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerview)
         progressBar = findViewById(R.id.progressbar1)
         swipeRefresh = findViewById(R.id.swiperefresh)
-        getAllProducts()
 
         swipeRefresh.setOnRefreshListener {
             Log.i("sancho", "onRefresh called from SwipeRefreshLayout")
 
-            // This method performs the actual data-refresh operation.
-            // The method calls setRefreshing(false) when it's finished.
-            getAllProducts()
         }
 
 
     }
+
+
 
 
     fun getAllProducts(){

@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-import com.sancho.kotlin_retrofit_fakeapi.model.ProductModelItem
+import com.sancho.kotlin_retrofit_fakeapi.model.response.ProductModelItem
 
 class ProductAdapter constructor(
     val context: Context,
