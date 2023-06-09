@@ -38,4 +38,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></Button>
 
+    <TextView
+        android:id="@+id/textviewadd"
+        android:text="yes"
+        android:textSize="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
 </LinearLayout>

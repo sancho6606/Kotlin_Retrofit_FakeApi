@@ -52,6 +52,7 @@ class MainActivity4 : AppCompatActivity() {
                 if (response.isSuccessful){
                     val productRes=response.body()!!
                     Log.d("sancho","onResponse: ${productRes.id}")
+                    binding.textviewadd.text=productRes.id.toString()
                 }
             }
 
